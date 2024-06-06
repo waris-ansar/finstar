@@ -18,6 +18,9 @@ module.exports = {
       colors: {
         secondaryGreen: "#3B9A1E",
       },
+      screens: {
+        tablg: "900px",
+      },
     },
   },
   plugins: [],
