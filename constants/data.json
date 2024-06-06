@@ -1,0 +1,123 @@
+{
+  "info": {
+    "company": "All Finstars",
+    "email": "info@company.com",
+    "phone": "12345",
+    "address": "1 st",
+    "date": "25 May 2024"
+  },
+  "nav": {
+    "links": ["Home", "About", "Services", "Partners", "Contact"],
+    "cta": {
+      "button": "Free Consultation"
+    }
+  },
+  "heroSection": {
+    "title": "Financing Your Future Starts Here",
+    "subtitle": "Interested in finding your perfect fit on home loan?",
+    "stats": [
+      {
+        "heading": "15+",
+        "body": "Years of Experience"
+      },
+      {
+        "heading": "1 Day",
+        "body": "Fastest Pre-approval"
+      },
+      {
+        "heading": "100%",
+        "body": "Customer Satisfaction"
+      }
+    ],
+    "cta": "Book Free Consultation"
+  },
+  "lenderSection": {
+    "title": "Connect with 60+ lenders at your fingertips"
+  },
+  "productSection": {
+    "Section": "OUR PRODUCTS",
+    "Title": "Your Trusted Partner in Finance",
+    "Subtitle": "Comprehensive Loan Solutions for Homebuyers and Investors",
+    "products": [
+      {
+        "title": "First Home Loans",
+        "description": "Buying your first home is thrilling, and understanding the loan process is crucial. FinStars can help simplify this process, guide you in government assistance eligibility, and explain how Loan to Value Ratio (LVR) impacts your deposit requirements."
+      },
+      {
+        "title": "Owner Occupier Loans",
+        "description": "Moving to a new property is a major decision that affects both your finances and lifestyle. FinStars collaborates with you, your solicitor, and accountant to ensure you make confident choices when buying your forever home."
+      },
+      {
+        "title": "Investment Loans",
+        "description": "FinStars helps you secure competitive pricing and the best investment structure tailored for long-term benefits, whether you're a first-time investor or expanding your portfolio. With partnerships across various lenders, we assist in selecting the optimal strategy for your residential investments and developments."
+      },
+      {
+        "title": "SMSF Loans",
+        "description": "Self-Managed Super Funds (SMSFs) are a favored option in Australia for those wanting more control over their retirement funds. With SMSF loans, investors can diversify their assets, including property. Let's discuss finding the best SMSF loan for you."
+      },
+      {
+        "title": "Refinancing Loans",
+        "description": "Refinancing can benefit you by lowering your interest rate, restructuring existing debts, consolidating multiple debts into one loan for simplicity, and providing better features like flexible repayment options. Our team is designed to deliver tailored refinance solutions that meet your unique needs."
+      },
+      {
+        "title": "Construction Loans",
+        "description": "FinStars assists with finding the right lender for your building project and manages the payment process smoothly. Construction loans support renovations and new builds, aiming to make your home-building experience enjoyable. If facing issues with a current construction project, we offer finance options for unfinished properties."
+      }
+    ]
+  },
+  "advantages": {
+    "title": "What Sets Us Apart",
+    "list": [
+      "No cost to you (We’re paid by the bank)",
+      "Committed to your best interests (We operate independently of any bank)",
+      "Quick processing times (Available for calls anytime, including weekends)",
+      "Connecting you with over 60 banks and lenders in one place",
+      "Continuous support and advice after your loan is finalized (Including property services)"
+    ]
+  },
+  "serviceProcess": {
+    "title": "How We’ll Support You",
+    "description": "From understanding your needs to finalizing your loan and beyond, here’s our process:",
+    "steps": [
+      {
+        "heading": "Understand Your Goals",
+        "body": "We’ll take the time to learn about your unique circumstances and objectives."
+      },
+      {
+        "heading": "Present Options",
+        "body": "We’ll conduct thorough research, present you with several loan options, and guide you through the decision-making process."
+      },
+      {
+        "heading": "Handle the Details",
+        "body": "Once you choose your loan, we’ll manage the paperwork, ensure it’s approved, and oversee the settlement."
+      },
+      {
+        "heading": "Ongoing Support",
+        "body": "We’ll continue to check in to ensure your loan remains the best fit as your situation evolves, aiming to save you money along the way."
+      }
+    ]
+  },
+  "banner": {
+    "description": "There are no difficult loans for us.",
+    "cta": "GET IN TOUCH"
+  },
+  "contactForm": ["Name", "Email", "Message"],
+  "footer": {
+    "description": "Financing Your Future Starts Here",
+    "services": [
+      "First Home Loans",
+      "Owner Occupier Loans",
+      "Investment Loans",
+      "SMSF Loans",
+      "Refinancing Loans",
+      "Construction Loans"
+    ],
+    "quickLinks": ["Home", "About", "Services", "Partners", "Contact"],
+    "booking": {
+      "description": "Schedule Your Free 30-Min Investment Blueprint Session",
+      "cta": "Book Now"
+    },
+    "Licenses": "All Finstars ©Ms Finance Pty Ltd\nACN No.656 541 203\nCredit Representative No.539653 of Australian Credit Licence No.383640",
+    "Copyrights": "Copyrights © 2024 FinStars - All Rights Reserved\nPrivacy Policy | Terms and Conditions"
+  }
+}
