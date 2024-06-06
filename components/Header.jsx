@@ -1,11 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import data from "@/constants/data.json";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const links = data.nav.links;
   const ctaText = data.nav.cta.button;
+  const [isMobileActive, setIsMobileActive] = useState(false);
 
   return (
     <div className="max-container">
@@ -19,15 +22,25 @@ const Header = () => {
             style={{ width: "100%", height: "100%" }}
           />
         </div>
-        <div className="items-center tablg:flex tablg:gap-8 lg:gap-10 xl:gap-16">
+        <div className="items-center hidden tablg:flex tablg:gap-8 lg:gap-10 xl:gap-16">
           {links.map((item, index) => (
             <Link key={index} href="" className="para-regular">
               {item}
             </Link>
           ))}
         </div>
-        <button className="btn-primary bg-secondaryGreen">{ctaText}</button>
+        <button className="btn-primary bg-secondaryGreen hidden tablg:block">
+          {ctaText}
+        </button>
+
+        <div
+          className="block tablg:hidden cursor-pointer"
+          onClick={() => setIsMobileActive((prev) => !prev)}
+        >
+          <Image src={"/assets/list.svg"} width={28} height={28} alt="menu" />
+        </div>
       </div>
+      {isMobileActive && <MobileMenu />}
     </div>
   );
 };
