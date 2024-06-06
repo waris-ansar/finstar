@@ -17,6 +17,8 @@ module.exports = {
       },
       colors: {
         secondaryGreen: "#3B9A1E",
+        primaryBlack: "#171717",
+        primarygray: "#6A6A6A",
       },
       screens: {
         tablg: "900px",
