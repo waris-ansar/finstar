@@ -15,11 +15,11 @@ const Footer = () => {
         {/* first column  */}
         <div className="flex flex-col justify-between">
           <h3 className="heading3 text-primaryBlack">{description}</h3>
-          <div className="mt-6 sm:mt-0 w-32 h-7">
+          <div className="mt-6 sm:mt-0 w-48 h-10">
             <Image
               src="/assets/logo.svg"
-              width={130}
-              height={30}
+              width={200}
+              height={50}
               alt="logo"
               style={{ width: "100%", height: "100%" }}
             />
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="mt-4 flex flex-col gap-3">
             {services.map((service, index) => (
               <Link
-                className="para-regular text-primaryBlack"
+                className="para-regular text-primaryBlack hover:text-secondaryGreen"
                 key={index}
                 href={""}
               >
@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="mt-4 flex flex-col gap-3">
             {quickLinks.map((link, index) => (
               <Link
-                className="para-regular text-primaryBlack"
+                className="para-regular text-primaryBlack hover:text-secondaryGreen"
                 key={index}
                 href={""}
               >
@@ -62,7 +62,7 @@ const Footer = () => {
           <h4 className="subtext text-secondaryGreen mb-5">
             {booking.description}
           </h4>
-          <button className="bg-secondaryGreen px-14 py-[18px] text-white text-lg font-semibold rounded-xl">
+          <button className="bg-secondaryGreen px-14 py-[18px] text-white text-lg font-semibold rounded-xl hover:grayscale-50">
             {booking.cta}
           </button>
         </div>

@@ -36,6 +36,6 @@
   }
 
   .btn-primary {
-    @apply font-plusJakarta font-sans text-base text-white px-8 py-[14px] rounded-full border-none;
+    @apply font-plusJakarta text-base text-white px-8 py-[14px] rounded-full border-none hover:grayscale-50 transition-colors;
   }
 }

@@ -24,7 +24,11 @@ const Header = () => {
         </div>
         <div className="items-center hidden tablg:flex tablg:gap-8 lg:gap-10 xl:gap-16">
           {links.map((item, index) => (
-            <Link key={index} href="" className="para-regular">
+            <Link
+              key={index}
+              href=""
+              className="para-regular text-black hover:text-secondaryGreen"
+            >
               {item}
             </Link>
           ))}

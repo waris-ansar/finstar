@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         plusJakarta: ["var(--font-plus-jakarta-sans)"],
       },
+      grayscale: {
+        50: "50%",
+      },
       colors: {
         secondaryGreen: "#3B9A1E",
         primaryBlack: "#171717",

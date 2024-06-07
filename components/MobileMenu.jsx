@@ -6,10 +6,14 @@ const MobileMenu = () => {
   const links = data.nav.links;
   const ctaText = data.nav.cta.button;
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 shadow-xl py-4">
       {links.map((item, index) => {
         return (
-          <Link key={index} className="para-regular text-center" href="">
+          <Link
+            key={index}
+            className="para-regular text-center text-black hover:text-secondaryGreen"
+            href=""
+          >
             {item}
           </Link>
         );
