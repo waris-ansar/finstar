@@ -1,0 +1,16 @@
+<svg width="240" height="360" viewBox="0 0 240 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.54">
+<g opacity="0.8">
+<path d="M240 240L120 240L240 360L240 240Z" fill="#89C278"/>
+<path d="M240 120L120 120L240 240L240 120Z" fill="#B8DBAE"/>
+<path d="M120 360L240 360L120 240L120 360Z" fill="#D8EBD2"/>
+<path d="M120 240L240 240L120 120L120 240Z" fill="#D8EBD2"/>
+</g>
+<g opacity="0.8">
+<path d="M1.00134e-05 2.05042e-05L1.52588e-05 120L120 1.52588e-05L1.00134e-05 2.05042e-05Z" fill="#89C278"/>
+<path d="M120 120L120 -5.24537e-06L5.24537e-06 120L120 120Z" fill="#D8EBD2"/>
+<path d="M120 120L120 -1.57361e-05L240 120L120 120Z" fill="#B8DBAE"/>
+<path d="M240 3.09949e-05L240 120L120 1.52588e-05L240 3.09949e-05Z" fill="#89C278"/>
+</g>
+</g>
+</svg>

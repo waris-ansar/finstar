@@ -1,9 +1,19 @@
-import Image from "next/image";
+import Hero from "@/components/landingpage/Hero";
+import Lenders from "@/components/landingpage/Lenders";
+import Products from "@/components/landingpage/Products";
+import Advantages from "@/components/landingpage/Advantages";
+import Process from "@/components/landingpage/Process";
+import Banner from "@/components/landingpage/Banner";
 
 export default function Home() {
   return (
-    <div className="max-container heading3 text-secondaryGreen">
-      Hero sections
-    </div>
+    <>
+      <Hero />
+      <Lenders />
+      <Products />
+      <Advantages />
+      <Process />
+      <Banner />
+    </>
   );
 }

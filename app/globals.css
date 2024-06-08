@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.border-down::after {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  background-color: #618654;
+  position: absolute;
+  bottom: 0;
+}
+
+.border-gap::after {
+  content: " ";
+  height: 100%;
+  border: 0.6px dashed #36861d;
+  position: absolute;
+  left: 35px;
+  z-index: 0;
+}
+
 @layer utilities {
   .max-container {
     @apply px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 max-w-[1440px] w-full mx-auto;
@@ -12,19 +30,27 @@
   }
 
   .heading1 {
-    @apply font-plusJakarta text-7xl font-semibold -tracking-[3%] leading-[120%];
+    @apply font-plusJakarta text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold -tracking-[3%] leading-[120%] md:leading-[120%] lg:leading-[120%] xl:leading-[120%];
   }
 
   .heading2 {
-    @apply font-plusJakarta text-[3.25rem] font-semibold -tracking-[3%] leading-[120%];
+    @apply font-plusJakarta text-[2.2rem] md:text-[2.7rem] lg:text-[3rem] xl:text-[3.25rem] font-semibold -tracking-[3%] leading-[120%] md:leading-[120%] lg:leading-[120%] xl:leading-[120%];
   }
 
   .heading3 {
-    @apply font-plusJakarta text-[2rem] font-semibold -tracking-[3%] leading-[130%];
+    @apply font-plusJakarta text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] xl:text-[2rem] font-semibold -tracking-[3%] leading-[130%] md:leading-[130%] lg:leading-[130%] xl:leading-[130%];
+  }
+
+  .heading4 {
+    @apply font-plusJakarta text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] xl:text-[2rem] font-bold -tracking-[3%] leading-[130%] md:leading-[130%] lg:leading-[130%] xl:leading-[130%];
+  }
+
+  .heading5 {
+    @apply font-plusJakarta font-bold text-base lg:text-lg xl:text-xl leading-[130%] lg:leading-[130%] xl:leading-[130%] -tracking-[-2%];
   }
 
   .para-mediumn {
-    @apply font-plusJakarta font-medium text-xl leading-[130%] -tracking-[-2%];
+    @apply font-plusJakarta font-medium text-base lg:text-lg xl:text-xl leading-[130%] lg:leading-[130%] xl:leading-[130%] -tracking-[-2%];
   }
 
   .para-small {
@@ -32,10 +58,10 @@
   }
 
   .para-regular {
-    @apply font-plusJakarta font-medium text-base;
+    @apply font-plusJakarta font-medium text-sm md:text-base;
   }
 
   .btn-primary {
-    @apply font-plusJakarta text-base text-white px-8 py-[14px] rounded-full border-none hover:grayscale-50 transition-colors;
+    @apply font-plusJakarta text-sm md:text-base text-white px-8 py-[14px] rounded-full border-none hover:grayscale-50 transition-colors;
   }
 }

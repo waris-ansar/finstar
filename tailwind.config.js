@@ -12,9 +12,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        plusJakarta: ["var(--font-plus-jakarta-sans)"],
-      },
       grayscale: {
         50: "50%",
       },
@@ -24,7 +21,11 @@ module.exports = {
         primarygray: "#6A6A6A",
       },
       screens: {
+        laptop: "1140",
         tablg: "900px",
+      },
+      fontFamily: {
+        plusJakarta: ["var(--font-plus-jakarta-sans)"],
       },
     },
   },

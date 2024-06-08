@@ -13,6 +13,7 @@
     }
   },
   "heroSection": {
+    "subText": "WELCOME TO ALL FINSTARS",
     "title": "Financing Your Future Starts Here",
     "subtitle": "Interested in finding your perfect fit on home loan?",
     "stats": [
@@ -40,26 +41,32 @@
     "Subtitle": "Comprehensive Loan Solutions for Homebuyers and Investors",
     "products": [
       {
+        "icon": "/assets/first-home.svg",
         "title": "First Home Loans",
         "description": "Buying your first home is thrilling, and understanding the loan process is crucial. FinStars can help simplify this process, guide you in government assistance eligibility, and explain how Loan to Value Ratio (LVR) impacts your deposit requirements."
       },
       {
+        "icon": "/assets/owner-loan.svg",
         "title": "Owner Occupier Loans",
         "description": "Moving to a new property is a major decision that affects both your finances and lifestyle. FinStars collaborates with you, your solicitor, and accountant to ensure you make confident choices when buying your forever home."
       },
       {
+        "icon": "/assets/investment-loan.svg",
         "title": "Investment Loans",
         "description": "FinStars helps you secure competitive pricing and the best investment structure tailored for long-term benefits, whether you're a first-time investor or expanding your portfolio. With partnerships across various lenders, we assist in selecting the optimal strategy for your residential investments and developments."
       },
       {
+        "icon": "/assets/smsfloan.svg",
         "title": "SMSF Loans",
         "description": "Self-Managed Super Funds (SMSFs) are a favored option in Australia for those wanting more control over their retirement funds. With SMSF loans, investors can diversify their assets, including property. Let's discuss finding the best SMSF loan for you."
       },
       {
+        "icon": "/assets/refinancing-loan.svg",
         "title": "Refinancing Loans",
         "description": "Refinancing can benefit you by lowering your interest rate, restructuring existing debts, consolidating multiple debts into one loan for simplicity, and providing better features like flexible repayment options. Our team is designed to deliver tailored refinance solutions that meet your unique needs."
       },
       {
+        "icon": "/assets/construction-loan.svg",
         "title": "Construction Loans",
         "description": "FinStars assists with finding the right lender for your building project and manages the payment process smoothly. Construction loans support renovations and new builds, aiming to make your home-building experience enjoyable. If facing issues with a current construction project, we offer finance options for unfinished properties."
       }
@@ -80,24 +87,29 @@
     "description": "From understanding your needs to finalizing your loan and beyond, here’s our process:",
     "steps": [
       {
+        "icon": "/assets/goals.svg",
         "heading": "Understand Your Goals",
         "body": "We’ll take the time to learn about your unique circumstances and objectives."
       },
       {
+        "icon": "/assets/options.svg",
         "heading": "Present Options",
         "body": "We’ll conduct thorough research, present you with several loan options, and guide you through the decision-making process."
       },
       {
+        "icon": "/assets/details.svg",
         "heading": "Handle the Details",
         "body": "Once you choose your loan, we’ll manage the paperwork, ensure it’s approved, and oversee the settlement."
       },
       {
+        "icon": "/assets/support.svg",
         "heading": "Ongoing Support",
         "body": "We’ll continue to check in to ensure your loan remains the best fit as your situation evolves, aiming to save you money along the way."
       }
     ]
   },
   "banner": {
+    "subText": "Ready to Start?",
     "description": "There are no difficult loans for us.",
     "cta": "GET IN TOUCH"
   },
