@@ -11,11 +11,11 @@ const Footer = () => {
 
   return (
     <div className="max-container mt-24">
-      <div className="grid grid-cols-1 sm:grid-cols-2 tablg:grid-cols-4 xl:grid-cols-[31%,22.5%,22.5%,24%] gap-4">
+      <div className="grid grid-cols-1 tablg:grid-cols-4 xl:grid-cols-[31%,22.5%,22.5%,24%] gap-4 pb-6 sm:pb-10 md:pb-14">
         {/* first column  */}
         <div className="flex flex-col justify-between">
           <h3 className="heading3 text-primaryBlack">{description}</h3>
-          <div className="mt-6 sm:mt-0 w-48 h-10">
+          <div className="mt-6 tablg:mt-0 w-48 h-10">
             <Image
               src="/assets/logo.svg"
               width={200}
@@ -66,6 +66,11 @@ const Footer = () => {
             {booking.cta}
           </button>
         </div>
+      </div>
+      <div className="border-t-[1px] border-[#EBE8D8] py-6">
+        <p className="subtext text-secondaryGreen text-right">
+          {data.footer.Copyright}
+        </p>
       </div>
     </div>
   );

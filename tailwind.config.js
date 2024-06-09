@@ -16,6 +16,9 @@ module.exports = {
         50: "50%",
       },
       colors: {
+        lightGreen: "#E0EFDB",
+        darkGreen: "#35861C",
+        menuGreen: "#B3DCA6",
         secondaryGreen: "#3B9A1E",
         primaryBlack: "#171717",
         primarygray: "#6A6A6A",

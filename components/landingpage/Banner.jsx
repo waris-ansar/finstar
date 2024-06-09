@@ -7,10 +7,12 @@ const Banner = () => {
 
   return (
     <div className="max-container my-[5.6rem] ">
-      <div className="w-full lg:w-[90%] mx-auto bg-[#35861C] min-h-fit md:min-h-[280px] lg:min-h-[350px] rounded-[20px] relative">
-        <div className="flex gap-16">
-          <div className="w-full sm:w-[70%] md:w-[45%] lg:w-[35%] pl-4 md:pl-9 py-5 md:py-9">
-            <h5 className="subtext text-white">{bannerData.subText}</h5>
+      <div className="w-full lg:w-[90%] mx-auto bg-darkGreen min-h-fit md:min-h-[280px] lg:min-h-[350px] rounded-[20px] relative">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-10 md:gap-16">
+          <div className="w-full md:w-[45%] lg:w-[35%] pl-4 md:pl-9 py-5 md:py-9">
+            <h5 className="subtext text-white uppercase">
+              {bannerData.subText}
+            </h5>
             <h3 className="heading3 text-white mt-3">
               {bannerData.description}
             </h3>
@@ -18,7 +20,7 @@ const Banner = () => {
               {bannerData.cta}
             </button>
           </div>
-          <div className="hidden md:block w-[55%] lg:w-[65%] absolute right-0 bottom-0">
+          <div className="w-full md:w-[55%] lg:w-[65%] relative md:absolute right-0 bottom-0">
             <Image
               src="/assets/banner-img.png"
               width={800}

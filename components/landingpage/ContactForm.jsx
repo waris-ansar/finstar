@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex justify-between items-center flex-col sm:flex-row gap-4 sm:gap-6">
+      <div className="flex justify-between items-center flex-col sm:flex-row gap-0 sm:gap-6">
         {data.contactForm.slice(0, 2).map((field, index) => (
           <div key={index} className="w-full mt-4">
             <label className="para-small block text-secondaryGreen w-1/2">
