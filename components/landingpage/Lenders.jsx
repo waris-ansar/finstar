@@ -24,6 +24,7 @@ const Lenders = () => {
             src="/assets/lender.gif"
             width={1200}
             height={170}
+            alt="lenders"
             unoptimized
           />
         </div>

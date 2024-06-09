@@ -4,6 +4,7 @@ import Products from "@/components/landingpage/Products";
 import Advantages from "@/components/landingpage/Advantages";
 import Process from "@/components/landingpage/Process";
 import Banner from "@/components/landingpage/Banner";
+import Contact from "@/components/landingpage/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Advantages />
       <Process />
       <Banner />
+      <Contact />
     </>
   );
 }
