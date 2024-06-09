@@ -16,7 +16,7 @@ const Advantages = () => {
       </div>
       <div className="max-container py-[5.25rem]">
         <div className="bg-lightGreen rounded-xl py-10 sm:py-16 md:py-20 tablg:py-24 px-4 sm:px-8 md:px-12 tablg:px-24 lg:px-36 z-10 relative">
-          <h6 className="subtext text-primaryBlack uppercase">Advantages</h6>
+          <h6 className="inter-14px text-primaryBlack uppercase">Advantages</h6>
           <h2 className="heading2 text-primaryBlack pt-6">
             {advantagesData.title}
           </h2>
@@ -24,13 +24,13 @@ const Advantages = () => {
           {/* header of table  */}
           <div className="grid grid-cols-[1fr,3rem,3rem] sm:grid-cols-[1fr,6rem,6rem] xl:grid-cols-[1fr,8rem,8rem] mt-4 md:-mt-8 border-down relative">
             <div className="flex-grow"></div>
-            <div className=" bg-secondaryGreen py-6">
-              <p className="uppercase text-center para-small text-white break-words px-1">
+            <div className=" bg-secondaryGreen py-7">
+              <p className="uppercase text-center inter-14px text-white break-words px-1">
                 Finstars
               </p>
             </div>
-            <div className="py-6">
-              <p className="uppercase text-center para-small text-primaryBlack break-words px-1">
+            <div className="py-7">
+              <p className="uppercase text-center inter-14px text-primaryBlack break-words px-1">
                 Bank
               </p>
             </div>
@@ -47,7 +47,7 @@ const Advantages = () => {
                   }`}
                 >
                   <div className="py-5">
-                    <p className="para-regular text-primaryBlack px-5">
+                    <p className="inter-16px text-primaryBlack px-5">
                       {advantage}
                     </p>
                   </div>

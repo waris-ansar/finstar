@@ -29,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         plusJakarta: ["var(--font-plus-jakarta-sans)"],
+        inter: ["var(--font-inter)"],
       },
     },
   },

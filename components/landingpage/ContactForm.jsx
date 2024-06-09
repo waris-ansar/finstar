@@ -36,7 +36,7 @@ const ContactForm = () => {
           <div key={index} className="w-full mt-4">
             <label
               for={field}
-              className="para-small block text-secondaryGreen w-1/2"
+              className="inter-14px block text-secondaryGreen w-1/2"
             >
               {field}
             </label>
@@ -55,7 +55,7 @@ const ContactForm = () => {
         <div key={index + data.contactForm.length} className="w-full mt-4">
           <label
             for={field}
-            className="para-small block text-secondaryGreen w-full"
+            className="inter-14px block text-secondaryGreen w-full"
           >
             {field}
           </label>

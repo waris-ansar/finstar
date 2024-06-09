@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t-[1px] border-[#EBE8D8] py-6">
-        <p className="subtext text-secondaryGreen text-right">
+        <p className="inter-16px text-secondaryGreen text-right">
           {data.footer.Copyright}
         </p>
       </div>
