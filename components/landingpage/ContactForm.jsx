@@ -35,7 +35,7 @@ const ContactForm = () => {
         {data.contactForm.slice(0, 2).map((field, index) => (
           <div key={index} className="w-full mt-4">
             <label
-              for={field}
+              htmlFor={field}
               className="inter-14px block text-secondaryGreen w-1/2"
             >
               {field}
@@ -54,7 +54,7 @@ const ContactForm = () => {
       {data.contactForm.slice(2).map((field, index) => (
         <div key={index + data.contactForm.length} className="w-full mt-4">
           <label
-            for={field}
+            htmlFor={field}
             className="inter-14px block text-secondaryGreen w-full"
           >
             {field}
