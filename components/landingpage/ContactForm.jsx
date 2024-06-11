@@ -3,12 +3,15 @@ import React, { useState } from "react";
 import data from "@/constants/data.json";
 
 const ContactForm = () => {
+  const scriptURL = process.env.NEXT_PUBLIC_CONTACT_FORM_GOOGLE_SHEET_LINK;
+
   const [formData, setFormData] = useState(
     data.contactForm.reduce((acc, field) => {
       acc[field] = "";
       return acc;
     }, {})
   );
+  const [isLoading, setLoading] = useState(false)
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -18,15 +21,30 @@ const ContactForm = () => {
     }));
   };
 
+  const formDataToString = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData, "this is the form data");
-    setFormData(
-      data.contactForm.reduce((acc, field) => {
-        acc[field] = "";
-        return acc;
-      }, {})
-    );
+    setLoading(true);
+    const formDataStr = formDataToString(formData);
+
+    fetch(scriptURL, { method: 'POST', body: formDataStr})
+      .then((response) => {
+        setLoading(false)
+        alert("Thank you! Your form is submitted successfully." );
+        setFormData(
+          data.contactForm.reduce((acc, field) => {
+            acc[field] = "";
+            return acc;
+          }, {})
+        );
+      })
+      .then(() => { window.location.reload(); })
+      .catch(error => console.error('Error!', error.message))
   };
 
   return (
@@ -38,11 +56,11 @@ const ContactForm = () => {
               htmlFor={field}
               className="inter-14px block text-secondaryGreen w-1/2"
             >
-              {field}
+              {field.toUpperCase()}
             </label>
             <input
               className="para-small w-full mt-2 text-black bg-[#f3f3f3] rounded-lg px-2 py-3 border-none outline-0 focus:outline-secondaryGreen focus:outline-1"
-              type={field.toLowerCase() === "email" ? "email" : "text"}
+              type={field === "email" ? "email" : "text"}
               name={field}
               id={field}
               value={formData[field]}
@@ -57,13 +75,13 @@ const ContactForm = () => {
             htmlFor={field}
             className="inter-14px block text-secondaryGreen w-full"
           >
-            {field}
+            {field.toUpperCase()}
           </label>
           <input
             className={`para-small w-full mt-2 text-black bg-[#f3f3f3] rounded-lg px-2 py-3 border-none outline-0 focus:outline-secondaryGreen focus:outline-1 ${
-              field.toLowerCase() === "message" && "h-36"
+              field === "message" && "h-36"
             }`}
-            type={field.toLowerCase() === "email" ? "email" : "text"}
+            type={field === "email" ? "email" : "text"}
             name={field}
             id={field}
             value={formData[field]}
@@ -72,7 +90,9 @@ const ContactForm = () => {
         </div>
       ))}
       <button className="btn-primary bg-secondaryGreen mt-4" type="submit">
-        Send Message
+        {
+          isLoading ? <div className="loader"></div> : 'Send Message'
+        }
       </button>
     </form>
   );

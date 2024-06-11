@@ -113,7 +113,7 @@
     "description": "There are no difficult loans for us.",
     "cta": "GET IN TOUCH"
   },
-  "contactForm": ["Name", "Email", "Message"],
+  "contactForm": ["name", "email", "message"],
   "footer": {
     "description": "Financing Your Future Starts Here",
     "services": [
