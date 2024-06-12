@@ -39,8 +39,8 @@ const Hero = () => {
               <div className="flex justify-center items-center w-10 md:w-14 lg:w-[69px] h-10 md:h-14 lg:h-[69px] bg-secondaryGreen rounded-full">
                 <Image
                   src="/assets/ArrowUpRight.svg"
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   alt="arrow"
                 />
               </div>
