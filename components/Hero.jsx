@@ -44,7 +44,7 @@ const Hero = () => {
                   alt="arrow"
                 />
               </div>
-              <p className="para-mediumn text-primaryBlack">
+              <p className="para-mediumn text-primaryBlack hover:text-secondaryGreen">
                 {heroSectionData.cta}
               </p>
             </div>
