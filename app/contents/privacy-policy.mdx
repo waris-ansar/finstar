@@ -1,0 +1,79 @@
+import data from "@/constants/data.json";
+
+const {company, email, phone, address, date} = data.info;
+
+# Privacy Policy
+
+## Introduction
+At {{company_name}}, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. By using our website, you consent to the practices described in this policy.
+
+## Information We Collect
+We collect various types of information to provide and improve our services to you:
+
+### Personal Information
+When you engage our services, we may collect personal information such as:
+- Name
+- Address
+- Email address
+- Phone number
+- Financial information
+- Employment details
+- Identification documents
+
+### Non-Personal Information
+We also collect non-personal information, including:
+- Browser type
+- IP address
+- Operating system
+- Referring website
+- Pages viewed
+- Date and time of visits
+
+## How We Use Your Information
+We use the information we collect for various purposes, including:
+- Providing and managing our services
+- Processing your applications and transactions
+- Communicating with you about your inquiries and services
+- Improving our website and services
+- Complying with legal and regulatory requirements
+- Conducting marketing and promotional activities with your consent
+
+## Disclosure of Your Information
+We may share your information with:
+- Financial institutions and lenders to process your applications
+- Third-party service providers who assist us in operating our business and providing our services
+- Legal and regulatory authorities as required by law
+- Other entities with your consent or as directed by you
+
+## Security of Your Information
+We implement a variety of security measures to maintain the safety of your personal information. These measures include:
+- Secure server environments
+- Encryption of sensitive data
+- Access controls to personal information
+- Regular security audits and updates
+
+## Your Rights
+You have the right to:
+- Access and review your personal information
+- Request corrections to any inaccurate or incomplete information
+- Withdraw your consent to our use of your information
+- Request the deletion of your personal information, subject to legal and contractual obligations
+
+## Cookies and Tracking Technologies
+Our website uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small data files stored on your device. You can control cookie settings through your browser preferences.
+
+## Changes to This Privacy Policy
+We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any significant changes by posting the new policy on our website with the updated effective date.
+
+## Contact Us
+If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+
+**{{company_name}}**
+Email: [{{email}}](mailto:{{email}})
+Phone: {{phone}}
+Address: {{address}}
+
+Effective Date: {{date}}
+
+export default ({ children }) => <div className='prose'>{children}</div>
+

@@ -14,7 +14,6 @@ const Lenders = () => {
           className="rotate-180"
         />
       </div>
-      {/* <div className="max-container pt-16 sm:pt-24 lg:pt-28 xl:pt-32 pb:16 sm:pb-24 lg:pb-28 xl:pb-32"> */}
       <div className="max-container pt-16 sm:pt-24 lg:pt-28 xl:pt-32 pb-8">
         <h3 className="heading3 text-center text-primaryBlack mt-1 relative z-10">
           {data.lenderSection.title}

@@ -26,7 +26,7 @@ const Header = () => {
           {links.map((item, index) => (
             <Link
               key={index}
-              href=""
+              href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
               className="para-regular text-black hover:text-secondaryGreen"
             >
               {item}

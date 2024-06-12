@@ -1,10 +1,10 @@
-import Hero from "@/components/landingpage/Hero";
-import Lenders from "@/components/landingpage/Lenders";
-import Products from "@/components/landingpage/Products";
-import Advantages from "@/components/landingpage/Advantages";
-import Process from "@/components/landingpage/Process";
-import Banner from "@/components/landingpage/Banner";
-import Contact from "@/components/landingpage/Contact";
+import Hero from "@/components/Hero";
+import Lenders from "@/components/Lenders";
+import Products from "@/components/Products";
+import Advantages from "@/components/Advantages";
+import Process from "@/components/Process";
+import Banner from "@/components/Banner";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (

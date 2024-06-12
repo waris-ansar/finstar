@@ -50,7 +50,7 @@ const Footer = () => {
               <Link
                 className="para-regular text-primaryBlack hover:text-secondaryGreen"
                 key={index}
-                href={""}
+                href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
               >
                 {link}
               </Link>

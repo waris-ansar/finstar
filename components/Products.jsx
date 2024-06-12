@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import data from "@/constants/data.json";
+import Link from "next/link";
 
 const Products = () => {
   const productsData = data.productSection;
@@ -34,19 +35,23 @@ const Products = () => {
                 key={index}
                 className="bg-[#FAFAFA] rounded-[20px] px-6 pt-6 pb-10 z-10"
               >
-                <Image
-                  src={product.icon}
-                  width={68}
-                  height={68}
-                  alt={product.title}
-                />
-                <h4 className="heading5 text-primaryBlack mt-6">
-                  {product.title}
-                </h4>
-                <p className="para-samll text-primarygray mt-4">
-                  {product.description}
-                </p>
-              </div>
+                  <Link
+                    href={`services/${product.path}`}
+                  >
+                  <Image
+                    src={product.icon}
+                    width={68}
+                    height={68}
+                    alt={product.title}
+                  />
+                  <h4 className="heading5 text-primaryBlack mt-6">
+                    {product.title}
+                  </h4>
+                  <p className="para-samll text-primarygray mt-4">
+                    {product.description}
+                  </p>
+                  </Link>
+                </div>
             );
           })}
         </div>
