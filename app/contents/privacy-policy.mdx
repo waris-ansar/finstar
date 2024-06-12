@@ -1,11 +1,9 @@
-import data from "@/constants/data.json";
-
-const {company, email, phone, address, date} = data.info;
+import {info} from "@/constants/data.json";
 
 # Privacy Policy
 
 ## Introduction
-At {{company_name}}, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. By using our website, you consent to the practices described in this policy.
+At {info.company}, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. By using our website, you consent to the practices described in this policy.
 
 ## Information We Collect
 We collect various types of information to provide and improve our services to you:
@@ -68,12 +66,12 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 ## Contact Us
 If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
 
-**{{company_name}}**
-Email: [{{email}}](mailto:{{email}})
-Phone: {{phone}}
-Address: {{address}}
+**{info.company}**
+- Email: {info.email}
+- Phone: {info.phone}
+- Address: {info.address}
 
-Effective Date: {{date}}
+Effective Date: {info.date}
 
 export default ({ children }) => <div className='prose'>{children}</div>
 
