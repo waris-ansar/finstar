@@ -1,9 +1,9 @@
 {
   "info": {
     "company": "All Finstars",
-    "email": "info@company.com",
-    "phone": "12345",
-    "address": "1 st",
+    "email": "",
+    "phone": "123",
+    "address": "1st",
     "date": "May 2024",
     "ctaLink": "https://calendly.com/1v1-consultation/30min_finstars"
   },
@@ -136,8 +136,8 @@
       "description": "Schedule Your Free 30-Min Investment Blueprint Session",
       "cta": "Book Now"
     },
-    "Licenses": "All Finstars ©Ms Finance Pty Ltd\nACN No.656 541 203\nCredit Representative No.539653 of Australian Credit Licence No.383640",
-    "Copyrights": "Copyrights © 2024 FinStars - All Rights Reserved\nPrivacy Policy | Terms and Conditions",
-    "Copyright": "Copyrights © 2024 FinStars"
+    "terms": "The information provided on this site is on the understanding that it is for illustrative and discussion purposes only. Whilst all care and attention is taken in its preparation any party seeking to rely on its content or otherwise should make their own enquiries and research to ensure its relevance to your specific personal and business requirements and circumstances. Terms, conditions, fees and charges may apply. Normal lending criteria apply. Rates subject to change. Approved applicants only.",
+    "licenses": "All Finstars © Ms Finance Pty Ltd | ACN No.656 541 203 | Credit Representative No.539653 | Australian Credit Licence No.383640",
+    "copyright": "Copyrights © 2024 FinStars"
   }
 }

@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const Footer = () => {
   const description = data.footer.description;
-  const services = data.footer.services;
   const quickLinks = data.footer.quickLinks;
   const booking = data.footer.booking;
   const ctaLink = data.info.ctaLink;
@@ -18,13 +17,15 @@ const Footer = () => {
         <div className="flex flex-col justify-between">
           <h3 className="heading3 text-primaryBlack">{description}</h3>
           <div className="mt-6 tablg:mt-0 w-48 h-10">
-            <Image
-              src="/assets/logo.svg"
-              width={200}
-              height={50}
-              alt="logo"
-              style={{ width: "100%", height: "100%" }}
-            />
+            <Link href="/">
+              <Image
+                src="/assets/logo.svg"
+                width={200}
+                height={50}
+                alt="logo"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Link>
           </div>
         </div>
 
@@ -72,8 +73,22 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t-[1px] border-[#EBE8D8] py-6">
-        <p className="inter-16px text-secondaryGreen text-right">
-          {data.footer.Copyright}
+        <p className="inter-12px text-primarygray text-left font-light">
+          {data.footer.licenses}
+        </p>
+        <p className="inter-12px text-primarygray text-left font-light mt-4">
+          {data.footer.terms}
+        </p>
+        <p className="inter-12px text-primarygray text-left font-light mt-4">
+          <Link href="/privacy" className="hover:text-secondaryGreen">
+            Privacy
+          </Link>
+          <span> | </span>
+          <Link href="/tnc" className="hover:text-secondaryGreen">
+            Terms and Conditions
+          </Link>
+          <span> | </span>
+          {data.footer.copyright}
         </p>
       </div>
     </div>
