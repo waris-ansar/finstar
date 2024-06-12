@@ -8,6 +8,8 @@ const Footer = () => {
   const services = data.footer.services;
   const quickLinks = data.footer.quickLinks;
   const booking = data.footer.booking;
+  const ctaLink = data.info.ctaLink;
+  const productsData = data.productSection.products;
 
   return (
     <div className="max-container mt-24">
@@ -31,13 +33,13 @@ const Footer = () => {
             Our services
           </h6>
           <div className="mt-4 flex flex-col gap-3">
-            {services.map((service, index) => (
+            {productsData.map((product, index) => (
               <Link
                 className="para-regular text-primaryBlack hover:text-secondaryGreen"
                 key={index}
-                href={""}
+                href={product.path}
               >
-                {service}
+                {product.title}
               </Link>
             ))}
           </div>
@@ -63,7 +65,9 @@ const Footer = () => {
             {booking.description}
           </h4>
           <button className="bg-secondaryGreen px-14 py-[18px] text-white text-lg font-semibold rounded-xl hover:grayscale-50">
-            {booking.cta}
+            <Link href={ctaLink} target="_blank">
+              {booking.cta}
+            </Link>
           </button>
         </div>
       </div>

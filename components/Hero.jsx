@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import data from "@/constants/data.json";
+
 const Hero = () => {
   const heroSectionData = data.heroSection;
+  const ctaLink = data.info.ctaLink;
 
   return (
     <div className="w-full relative">
@@ -31,19 +34,21 @@ const Hero = () => {
           <h3 className="para-mediumn text-secondaryGreen mt-6">
             {heroSectionData.subtitle}
           </h3>
-          <div className="flex items-center gap-6 mt-8 cursor-pointer">
-            <div className="flex justify-center items-center w-10 md:w-14 lg:w-[69px] h-10 md:h-14 lg:h-[69px] bg-secondaryGreen rounded-full">
-              <Image
-                src="/assets/ArrowUpRight.svg"
-                width={20}
-                height={20}
-                alt="arrow"
-              />
+          <Link href={ctaLink} target="_blank">
+            <div className="flex items-center gap-6 mt-8 cursor-pointer">
+              <div className="flex justify-center items-center w-10 md:w-14 lg:w-[69px] h-10 md:h-14 lg:h-[69px] bg-secondaryGreen rounded-full">
+                <Image
+                  src="/assets/ArrowUpRight.svg"
+                  width={20}
+                  height={20}
+                  alt="arrow"
+                />
+              </div>
+              <p className="para-mediumn text-primaryBlack">
+                {heroSectionData.cta}
+              </p>
             </div>
-            <p className="para-mediumn text-primaryBlack">
-              {heroSectionData.cta}
-            </p>
-          </div>
+          </Link>
 
           <div className="flex items-center justify-between gap-8 mt-8">
             {heroSectionData.stats.map((stat, index) => {

@@ -36,7 +36,7 @@ const Products = () => {
                 className="bg-[#FAFAFA] rounded-[20px] px-6 pt-6 pb-10 z-10"
               >
                   <Link
-                    href={`services/${product.path}`}
+                    href={product.path}
                   >
                   <Image
                     src={product.icon}
